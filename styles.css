@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------- header ---------- */
+
+header{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: blueviolet;
+}
+
+/* -------- header ---------- */
