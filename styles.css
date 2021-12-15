@@ -3,7 +3,7 @@
 /* -------- estilos generales ---------- */
 
 :root{
-    --color-principal: rgb(69, 12, 126);
+    --color-principal: #004AAD;
     --color-secondario: blue;
 }
 
@@ -18,7 +18,7 @@ body{
     font-size: 1.3em;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     color: var(--color-principal);
     font-family: 'Dosis', sans-serif;
 }
@@ -50,7 +50,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    color: blueviolet;
+    color: var(--color-principal);
 }
 
 header img{
@@ -66,7 +66,7 @@ header img{
 }
 
 #hero h2{
-    padding: 0px 0px;
+    font-size: 2em;
 }
 
 #hero p{
@@ -78,6 +78,14 @@ header img{
     background: var(--color-principal);
     color: #fff;
     cursor: pointer;
+    border-radius: 12px;
+    transition: .3s;
+    border: 1px solid var(--color-principal);
+}
+
+#hero button:hover{
+    color: var(--color-principal);
+    background: #fff;
 }
 
 
@@ -91,6 +99,7 @@ header img{
 
 #about h2{
     padding: 20px 0px;
+    text-align: center;
 }
 
 /* -------- sobre nosotros ---------- */
@@ -99,6 +108,11 @@ header img{
 
 #mision{
     padding: 20px;
+}
+
+#mision h2{
+    padding: 20px 0px;
+    text-align: center;
 }
 
 /* -------- mision ---------- */
@@ -110,7 +124,12 @@ header img{
 }
 
 #proceso h2{
-    padding: 20px 0px;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#proceso h3{
+    text-align: center;
 }
 
 #proceso p{
@@ -124,7 +143,10 @@ header img{
 #proceso ul li{
     list-style-type: none;
     width: 25%;
+    padding: 10px;
 }
+
+
 
 /* -------- proceso ---------- */
 
@@ -135,7 +157,13 @@ header img{
 }
 
 #porqueelegirnos h2{
-    padding: 20px 0px;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#porqueelegirnos h3{
+    padding: 10px 0px;
+    text-align: center;
 }
 
 #porqueelegirnos ul{
@@ -145,6 +173,7 @@ header img{
 #porqueelegirnos ul li{
     list-style-type: none;
     width: 25%;
+    padding: 10px;
 }
 
 
@@ -156,12 +185,33 @@ header img{
     padding: 20px;
 }
 
+#servicios h2{
+    text-align: center;
+    padding: 50px;
+}
+
+#servicios ul{
+    display: flex;
+    
+}
+
+#servicios ul li{
+    list-style-type: none;
+    width: 33.33%;
+    padding: 10px;
+}
+
 /* -------- servicios ---------- */
 
 /* -------- portafolio ---------- */
 
 #portafolio{
     padding: 20px;
+}
+
+#portafolio h2{
+    text-align: center;
+    padding: 50px;
 }
 
 /* -------- portafolio ---------- */
@@ -174,6 +224,7 @@ header img{
 
 #precios h2{
     text-align: center;
+    padding: 50px;
 }
 
 #precios ul{
@@ -201,6 +252,32 @@ header img{
 
 #counter{
     padding: 20px;
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#counter h3{
+    color: #fff;
+}
+
+.numbers {
+	display: flex;
+	text-align: center;
+}
+
+.numbers > div{
+    width: 33.33%;
+}
+
+.counterContainer {
+	padding: 10px;
+}
+
+.counter {
+	font-size: 100px;
 }
 
 /* -------- counter ---------- */
@@ -209,10 +286,34 @@ header img{
 
 #contacto{
     padding: 20px;
+    text-align: center;
+}
+
+#contacto h2{
+    padding: 50px 0px;
 }
 
 #contacto p{
     padding: 10px 0px;
+}
+
+#contacto i{
+    color: var(--color-principal);
+}
+
+.redes__sociales{
+    padding: 20px 0px;
+}
+
+.redes__sociales a{
+    color: var(--color-principal);
+    font-size: 2em;
+    margin: 0px 20px 0px 0px;
+    transition: .3s;
+}
+
+.redes__sociales a:hover{
+    opacity: .5;
 }
 
 /* -------- contacto ---------- */
