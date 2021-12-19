@@ -91,7 +91,8 @@ header img{
 /* -------- hero ---------- */
 
 #hero{
-    padding: 20px;
+    padding: 50px;
+    display: flex;
 }
 
 #hero h2{
@@ -117,13 +118,29 @@ header img{
     background: #fff;
 }
 
+.sone{
+    width: 50%;
+}
+
+.sone p{
+    line-height: 30px;
+}
+
+.stwo{
+    width: 50%;
+}
+
+.stwo img{
+    width: 100%;
+}
+
 
 /* -------- hero ---------- */
 
 /* -------- sobre nosotros ---------- */
 
 #about{
-    padding: 20px;
+    padding: 50px;
 }
 
 #about h2{
@@ -136,7 +153,7 @@ header img{
 /* -------- mision ---------- */
 
 #mision{
-    padding: 20px;
+    padding: 50px;
 }
 
 #mision h2{
@@ -149,7 +166,7 @@ header img{
 /* -------- proceso ---------- */
 
 #proceso{
-    padding: 20px;
+    padding: 50px;
 }
 
 #proceso h2{
@@ -188,7 +205,7 @@ header img{
 /* -------- porque elegirnos ---------- */
 
 #porqueelegirnos{
-    padding: 20px;
+    padding: 50px;
 }
 
 #porqueelegirnos h2{
@@ -217,7 +234,7 @@ header img{
 /* -------- servicios ---------- */
 
 #servicios{
-    padding: 20px;
+    padding: 50px;
 }
 
 #servicios h2{
@@ -241,7 +258,7 @@ header img{
 /* -------- portafolio ---------- */
 
 #portafolio{
-    padding: 20px;
+    padding: 50px;
 }
 
 #portafolio h2{
@@ -254,7 +271,7 @@ header img{
 /* -------- precios ---------- */
 
 #precios{
-    padding: 20px;
+    padding: 50px;
 }
 
 #precios h2{
@@ -290,7 +307,8 @@ header img{
 /* -------- counter ---------- */
 
 #counter{
-    padding: 20px;
+    background: url('./images/counters-bg.jpg') !important;
+    padding: 50px;
     color: #fff;
     background: var(--color-principal);
 }
