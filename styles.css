@@ -228,6 +228,15 @@ header img{
     padding: 50px;
 }
 
+#porqueelegirnos p{
+    line-height: 30px;
+}
+
+#porqueelegirnos img{
+    width: 100px;
+    margin: auto;
+}
+
 #porqueelegirnos h2{
     padding: 50px 0px;
     text-align: center;
@@ -294,7 +303,7 @@ header img{
     float: left;
     background-color: var(--color-principal);
     color: #ffffff;
-    width: 100px;
+    width: 33%;
     line-height: 100px;
     text-align: center;
     margin: 2px;
@@ -438,14 +447,8 @@ header img{
     padding: 20px;
 }
 
-
-
-
-
-
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
