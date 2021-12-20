@@ -90,6 +90,9 @@ header img{
     padding-top: 102px;
   }
 
+
+  
+
 /* -------- header ---------- */
 
 /* -------- hero ---------- */
@@ -235,6 +238,7 @@ header img{
 #porqueelegirnos img{
     width: 100px;
     margin: auto;
+    display: block;
 }
 
 #porqueelegirnos h2{
@@ -273,6 +277,12 @@ header img{
 
 #servicios h3{
     text-align: center;
+}
+
+#servicios img{
+    width: 100px;
+    display: block;
+    margin: auto;
 }
 
 #servicios ul{
@@ -424,6 +434,18 @@ header img{
     display: flex;
 }
 
+b{
+    color: var(--color-secundario);
+    padding: 10px 0px;
+    display: block;
+    text-transform: uppercase;
+}
+
+b::before{
+    content: '- ';
+    
+}
+
 .testCard h3{
     margin: 10px 0px
 }
@@ -435,6 +457,7 @@ header img{
 
 .testCard img{
     width: 100%;
+    border-radius: 25px;
 }
 
 .testOne{

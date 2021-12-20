@@ -56,7 +56,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
 
 // filter div elements
@@ -103,3 +103,12 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
+//menu hamburguesa
+
+$(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
