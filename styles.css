@@ -35,11 +35,12 @@ a{
 header{
     display: flex;
     background: #fff;
-    padding: 20px;
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     z-index: 10;
+    transition: .3s;
+    padding: 10px;
 }
 
 header ul{
@@ -63,6 +64,8 @@ header ul li a:hover{
 
 header img{
     width: 200px;
+    margin: auto;
+    display: block;
 }
 
 .top-container {
@@ -72,8 +75,9 @@ header img{
   }
   
   .header {
-    padding: 10px 16px;
     color: #f1f1f1;
+    position: fixed;
+    width: 100%;
   }
   
   .content {
@@ -84,13 +88,9 @@ header img{
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 20px;
   }
   
-  .sticky + .content {
-    padding-top: 102px;
-  }
-
-
   
 
 /* -------- header ---------- */
@@ -98,7 +98,7 @@ header img{
 /* -------- hero ---------- */
 
 #hero{
-    padding: 50px;
+    padding: 152px 50px 50px 50px;
     display: flex;
 }
 
@@ -110,8 +110,11 @@ header img{
     padding: 20px 0px;
 }
 
-#hero button{
+#hero a{
     padding: 10px;
+    display: block;
+    width: 120px;
+    text-align: center;
     background: var(--color-principal);
     color: #fff;
     cursor: pointer;
@@ -120,7 +123,7 @@ header img{
     border: 1px solid var(--color-principal);
 }
 
-#hero button:hover{
+#hero a:hover{
     color: var(--color-principal);
     background: #fff;
 }
@@ -311,9 +314,10 @@ header img{
 
 .filterDiv {
     float: left;
-    background-color: var(--color-principal);
+    background: var(--color-principal);
     color: #ffffff;
     width: 33%;
+    height: 200px;
     line-height: 100px;
     text-align: center;
     margin: 2px;
@@ -388,6 +392,7 @@ header img{
     color: rgb(187, 17, 46);
     padding: 20px 0px;
     text-align: center;
+    font-size: 1.5em;
 }
 
 /* -------- precios ---------- */
