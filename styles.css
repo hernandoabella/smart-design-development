@@ -4,7 +4,7 @@
 
 :root{
     --color-principal: #004AAD;
-    --color-secundario: rgb(187, 17, 46);
+    --color-secundario: rgb(196, 32, 103);
 }
 
 *{
@@ -26,6 +26,12 @@ h1, h2, h3, h4{
 
 a{
     color: var(--color-principal);
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 1em;
+    }
 }
 
 /* -------- estilos generales ---------- */
@@ -267,6 +273,7 @@ header img{
         transform: translateY(100px);
         padding: 10px;
         width: 100%;
+        display: none;
     }  
 
     .navegacion ul li{
@@ -274,7 +281,11 @@ header img{
         display: block;
         text-align: center;
     }
-  
+
+    .navegacion ul li a{
+        padding: 10px;
+        display: block;
+    }
 }
   
 
@@ -331,6 +342,21 @@ header img{
     width: 100%;
 }
 
+@media only screen and (max-width: 768px){
+    #hero{
+        flex-direction: column;
+        padding: 130px 20px 20px 20px;
+    }
+
+    .sone{
+        width: 100%;
+    }
+
+    .stwo img{
+        margin-top: 20px;
+    }
+}
+
 
 /* -------- hero ---------- */
 
@@ -361,20 +387,27 @@ header img{
     width: 100%;
 }
 
+@media only screen and (max-width: 768px){
+    #about{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .aboutOne{
+        width: 100%;
+    }
+    
+    .aboutTwo{
+        width: 100%;
+    }
+
+    .aboutOne img{
+        display: none;
+    }
+}
+
 /* -------- sobre nosotros ---------- */
 
-/* -------- mision ---------- */
-
-#mision{
-    padding: 50px;
-}
-
-#mision h2{
-    padding: 20px 0px;
-    text-align: center;
-}
-
-/* -------- mision ---------- */
 
 /* -------- proceso ---------- */
 
@@ -411,6 +444,20 @@ header img{
     line-height: 30px;
 }
 
+@media only screen and (max-width: 768px){
+    
+    #proceso{
+        padding: 20px;
+    }
+
+    #proceso ul{
+        flex-direction: column;
+    }
+
+    #proceso ul li{
+        width: 100%;
+    }
+}
 
 
 /* -------- proceso ---------- */
@@ -451,6 +498,22 @@ header img{
     padding: 10px;
 }
 
+@media only screen and (max-width: 768px){
+
+    #porqueelegirnos{
+        padding: 20px;
+    }
+
+    #porqueelegirnos ul li{
+
+        width: 100%;
+
+    }
+
+    #porqueelegirnos ul{
+        flex-direction: column;
+    }
+}
 
 /* -------- porque elegirnos ---------- */
 
@@ -485,6 +548,25 @@ header img{
     list-style-type: none;
     width: 33.33%;
     padding: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    
+    
+    #servicios{
+        padding: 20px;
+    }
+    
+    #servicios ul{
+        flex-direction: column;
+    }
+
+    #servicios ul li{
+        list-style-type: none;
+        width: 100%;
+        padding: 10px;
+    }
+
 }
 
 /* -------- servicios ---------- */
@@ -540,6 +622,10 @@ header img{
     color: white;
 }
 
+@media only screen and (max-width: 768px){
+    
+}
+
 /* -------- portafolio ---------- */
 
 /* -------- precios ---------- */
@@ -583,6 +669,23 @@ header img{
     font-size: 1.5em;
 }
 
+@media only screen and (max-width: 768px){
+
+    #precios{
+        padding: 20px;
+    }
+
+    .contenedor__precios{
+        flex-direction: column;
+    }
+
+    #precios ul{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
 /* -------- precios ---------- */
 
 /* -------- counter ---------- */
@@ -613,6 +716,12 @@ header img{
 
 .counter {
 	font-size: 100px;
+}
+
+@media only screen and (max-width: 768px){
+    .counter {
+        font-size: 50px;
+    }
 }
 
 /* -------- counter ---------- */
@@ -721,9 +830,20 @@ b::before{
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+@media only screen and (max-width: 768px){
+    .testCard{
+        flex-direction: column;
+    }
+
+    .testOne{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .testTwo{
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 /* -------- Testimonials ---------- */
@@ -772,6 +892,33 @@ b::before{
 
 .contTwo img{
     width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+    
+    #contacto{
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #contacto h2{
+        text-align: center;
+    }
+
+    .contOne{
+        width: 100%;
+    }
+
+    .contTwo{
+        width: 100%;
+    }
+
+    
+
+    .contTwo img{
+        display: none;
+    }
 }
 
 /* -------- contacto ---------- */
