@@ -12,11 +12,13 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 body{
     font-family: sans-serif;
     font-size: 1.3em;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4{
@@ -46,6 +48,9 @@ header{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     z-index: 10;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header ul{
@@ -74,29 +79,7 @@ header img{
     display: block;
 }
 
-.top-container {
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
-  }
-  
-  .header {
-    color: #f1f1f1;
-    position: fixed;
-    width: 100%;
-  }
-  
-  .content {
-    padding: 16px;
-  }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 20px;
-  }
-  
+
 /* Icon 1 */
 
 #nav-icon2{
@@ -303,6 +286,7 @@ header img{
 #hero{
     padding: 152px 50px 50px 50px;
     display: flex;
+    height: 100vh;
 }
 
 #hero h2{
