@@ -110,5 +110,6 @@ for (var i = 0; i < btns.length; i++) {
 $(document).ready(function(){
 	$('#nav-icon2').click(function(){
 		$(this).toggleClass('open');
+    $('#navegacion').toggleClass('open');
 	});
 });

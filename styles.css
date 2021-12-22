@@ -4,7 +4,7 @@
 
 :root{
     --color-principal: #004AAD;
-    --color-secundario: rgb(196, 32, 103);
+    --color-secundario: #02285b;
 }
 
 *{
@@ -265,24 +265,33 @@ header img{
     }
 
     .navegacion{
-        background: red;
+        background: var(--color-principal);
         position: absolute;
         right: 0;
-        transform: translateY(100px);
+        bottom: -265px;
+        transform: translateX(-800px);
         padding: 10px;
         width: 100%;
-        display: none;
-    }  
+        transition: .3s;
+    }
+    
+    #navegacion.open {
+        transform: translateX(0px);
+    }
 
     .navegacion ul li{
-        background: blue;
         display: block;
         text-align: center;
     }
 
     .navegacion ul li a{
+        color: #fff;
         padding: 10px;
         display: block;
+    }
+
+    .navegacion ul li a:hover{
+        color: var(--color-secundario);
     }
 }
   
