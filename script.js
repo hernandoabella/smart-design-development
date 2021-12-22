@@ -108,7 +108,7 @@ for (var i = 0; i < btns.length; i++) {
 //menu hamburguesa
 
 $(document).ready(function(){
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+	$('#nav-icon2').click(function(){
 		$(this).toggleClass('open');
 	});
 });
