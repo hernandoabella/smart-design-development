@@ -93,7 +93,7 @@ for (var i = 0; i < btns.length; i++) {
 //menu hamburguesa
 
 $(document).ready(function(){
-	$('#nav-icon2').click(function(){
+	$('.menu__hamburguesa').click(function(){
 		$(this).toggleClass('open');
     $('#navegacion').toggleClass('open');
 	});
