@@ -96,8 +96,14 @@ $(document).ready(function(){
 	$('#nav-icon2').click(function(){
 		$(this).toggleClass('open');
     $('#navegacion').toggleClass('open');
-    $('#navegacion > ul li a').toggleClass('open');
 	});
+});
+
+
+// ocultar menu cuando hagas click
+
+$('.navegacion ul li a').click(function(){
+  $(".navegacion").toggleClass('open');
 });
 
 // button ir arriba
