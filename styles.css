@@ -308,7 +308,6 @@ header img{
 #hero{
     padding: 152px 50px 50px 50px;
     display: flex;
-    height: 100vh;
 }
 
 #hero h2{
@@ -364,8 +363,13 @@ header img{
         width: 100%;
     }
 
+    .stwo{
+        width: 100%;
+    }
+
     .stwo img{
         margin-top: 20px;
+        width: 100%;
     }
 }
 
