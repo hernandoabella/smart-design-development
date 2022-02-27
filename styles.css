@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Source+Serif+Pro:wght@200;300;400&display=swap');
 
 /* -------- estilos generales ---------- */
 
 :root{
-    --color-1: #000;
-    --color-2: #000;
-    --color-3: #000;
+    --color-1: #5271FF;
+    --color-2: #E71D36;
+    --color-3: #FCEC52;
     --color-4: #000;
     --color-5: #000;
-    --fuente-titulo: arial-sans-serif;
-    --fuente-texto: arial-sans-serif;
+    --fuente-titulo: 'Nunito', sans-serif;
+    --fuente-texto: 'Source Serif Pro', serif;
 }
 
 *{
@@ -21,14 +21,14 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: var(--fuente-texto);
     font-size: 1.3em;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4{
-    color: var(--color-principal);
-    font-family: 'Dosis', sans-serif;
+    color: var(--color-1);
+    font-family: var(--fuente-titulo);
 }
 
 a{
@@ -90,10 +90,11 @@ header ul li{
 }
 
 header ul li a{
-    color: #000;
+    color: var(--color-1);
     text-decoration: none;
     margin: 10px;
     transition: .3s;
+    font-family: var(--fuente-titulo);
 }
 
 header ul li a:hover{
